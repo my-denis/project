@@ -70,10 +70,10 @@ gulp.task('clean', function (done) {
 gulp.task('js-prod', function () {
     return gulp.src(['node_modules/jquery/dist/jquery.min.js', 'node_modules/slick-carousel/slick/slick.min.js', 'app/js/script.js'])
         .pipe(concat('all.min.js'))
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(uglify())
+        // .pipe(babel({
+        //     presets: ['@babel/env']
+        // }))
+        // .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 

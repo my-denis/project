@@ -53,7 +53,7 @@
         content: '';
         width: 12px;
         height: 12px;
-        background-image: url(../../img/arrow-right.svg);
+        background-image: url(../img/arrow-right.svg);
         align-self: center;
         background-repeat: no-repeat;
         display: inline-flex;
@@ -124,7 +124,7 @@
             content: '';
             width: 12px;
             height: 12px;
-            background-image: url(../../img/arrow-right.svg);
+            background-image: url(../img/arrow-right.svg);
             align-self: center;
             background-repeat: no-repeat;
             display: inline-flex;
@@ -242,7 +242,7 @@
             content: '';
             width: 12px;
             height: 12px;
-            background-image: url(../../img/arrow-right.svg);
+            background-image: url(../img/arrow-right.svg);
             align-self: center;
             background-repeat: no-repeat;
             display: inline-flex;
@@ -359,7 +359,7 @@
             &-1::before {
                 content: "";
                 padding-left: 35px;
-                background-image: url(../../img/flag.svg);
+                background-image: url(../img/flag.svg);
                 background-repeat: no-repeat;
                 background-position: center left;
                 padding-top: 5px;
@@ -367,7 +367,7 @@
             &-2::before {
                 content: "";
                 padding-left: 37px;
-                background-image: url(../../img/case-about.svg);
+                background-image: url(../img/case-about.svg);
                 background-repeat: no-repeat;
                 background-position: center left;
                 padding-top: 5px;
@@ -375,7 +375,7 @@
             &-3::before {
                 content: "";
                 padding-left: 36px;
-                background-image: url(../../img/star.svg);
+                background-image: url(../img/star.svg);
                 background-repeat: no-repeat;
                 background-position: center left;
                 padding-top: 5px;
@@ -390,7 +390,7 @@
     }
     &__about-team {
         margin-bottom: 30px;
-        background-image: url(../../img/team.jpg);
+        background-image: url(../img/team.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: 114px;
