@@ -13,7 +13,8 @@ const gulp = require('gulp'),
     del = require('del'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
-    replace = require('gulp-replace');
+    replace = require('gulp-replace'),
+    uglify = require('gulp-uglify');
 
 gulp.task('browser-sync', function () {
     browserSync({
@@ -73,7 +74,7 @@ gulp.task('js-prod', function () {
         // .pipe(babel({
         //     presets: ['@babel/env']
         // }))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
 
@@ -92,6 +93,7 @@ gulp.task('css', function () {
 gulp.task('html', function () {
     return gulp.src('app/*.html')
         .pipe(replace('style.css', 'style.min.css'))
+        .pipe(replace('all.js', 'all.min.js'))
         .pipe(htmlMin({ collapseWhitespace: true }))
         .pipe(gulp.dest('dist'));
 });
